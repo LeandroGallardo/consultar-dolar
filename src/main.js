@@ -9,14 +9,11 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 import VueMultianalytics from 'vue-multianalytics'
 let gaConfig = {
-  appName: 'Test', // Mandatory
+  appName: 'redcapital', // Mandatory
   appVersion: '0.1', // Mandatory
   trackingId: 'UA-161604548-1', // Mandatory
-  debug: true, // Whether or not display console logs debugs (optional)
-  options: {
-    'clientId': '35009a79-1a05-49d7-b876-2b884d0f825b',
-    'siteSpeedSampleRate': 10
-  }
+  debug: false, // Whether or not display console logs debugs (optional)
+
 }
 
 Vue.use(VueAxios, axios)
