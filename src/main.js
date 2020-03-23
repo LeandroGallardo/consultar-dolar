@@ -9,11 +9,10 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import VueAnalytics from 'vue-analytics'
 
  
-Vue.use(VueAxios, axios)
-
-Vue.use(VueAnalytics, {
+Vue.use(VueAxios, axios,VueAnalytics, {
   id: 'UA-161604548-1'
 })
+
 Vue.config.productionTip = false
 
 new Vue({
