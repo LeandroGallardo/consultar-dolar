@@ -12,9 +12,7 @@
                 :min="minimo"
                 :max="maximo"
                 @change="getDolar(fecha)"
- 
                >
-
                </v-date-picker>
             </v-card>
            <v-card color="error" dark>
@@ -28,10 +26,9 @@
     </v-content>
   </v-app>
 </template>
-
 <script>
 import axios from "axios";
-
+import VueMultianalytics from "vue-multianalytics";
 
 export default {
   name: 'App',
@@ -49,6 +46,7 @@ export default {
   methods:{
    
     async getDolar(dia){
+      this.VueMultianalytics.trackEvent({action: 'inicio_simulacion'} )
       let arrayFecha = dia.split('-')
       console.log(arrayFecha)
       let ddmmyy = arrayFecha[2]+'-'+arrayFecha[1]+'-'+arrayFecha[0];
