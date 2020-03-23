@@ -28,7 +28,7 @@
 </template>
 <script>
 import axios from "axios";
-import VueMultianalytics from "vue-multianalytics";
+
 
 export default {
   name: 'App',
@@ -46,7 +46,7 @@ export default {
   methods:{
    
     async getDolar(dia){
-      VueMultianalytics.trackEvent({action: 'inicio_simulacion'} )
+      
       let arrayFecha = dia.split('-')
       console.log(arrayFecha)
       let ddmmyy = arrayFecha[2]+'-'+arrayFecha[1]+'-'+arrayFecha[0];
