@@ -46,7 +46,7 @@ export default {
   methods:{
    
     async getDolar(dia){
-      this.VueMultianalytics.trackEvent({action: 'inicio_simulacion'} )
+      VueMultianalytics.trackEvent({action: 'inicio_simulacion'} )
       let arrayFecha = dia.split('-')
       console.log(arrayFecha)
       let ddmmyy = arrayFecha[2]+'-'+arrayFecha[1]+'-'+arrayFecha[0];
